@@ -1,3 +1,3 @@
 # INFO552-GroupProject
 
-INFO552 Group Project
+Contributors: Sarah Nichols, Jennifer Bailey, & Alyssa Jordan
