@@ -1,3 +1,92 @@
 /* =============
     Header
 ============= */
+
+header {
+    background-color: var(--green);
+    color: var(--brown);
+    display: grid;
+    grid-template-columns: 90% auto;
+    grid-template-areas:
+    "logo burger"
+    "nav nav";
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+    top: 0;
+    left: 0;
+
+    #logo-phone {
+      display: none;
+    }
+
+    @media (max-width: 473px) {
+      #logo-phone {
+        display: block;
+        padding: 8.48px 0;
+      }
+      #logo-top {
+        display: none;
+      }
+      #logo-bottom {
+        display: none;
+      }
+    }
+
+    @media (min-width: 1100px) {
+      grid-template-areas: "logo nav";
+      grid-template-columns: 38% auto;
+      align-items: center;
+
+    }
+
+    #logo{
+        grid-area: logo;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #burger-container{
+        grid-area: burger;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+
+        @media (min-width: 1100px) {
+            display: none;
+        }
+
+        button{
+            border: none;
+            background-color: transparent;
+            color: var(--brown);
+            font-size: rem-calc(24);
+            cursor: pointer;
+        }
+    }
+
+
+    a:link, a:visited {
+      color: var(--brown);
+      text-decoration: none;
+    }
+
+    a:hover, a:active {
+        color: var(--cream);
+    }
+
+    #logo-top {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+    #logo-bottom {
+      padding-top: 4px;
+      margin-top: 0px;
+      text-align: center;
+
+    }
+}
