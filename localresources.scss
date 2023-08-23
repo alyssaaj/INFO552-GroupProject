@@ -1,24 +1,15 @@
 //local resources//
 
-
-#localresources-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensure the content takes at least the full viewport height */
-}
-
-#index-content {
-    text-align: center;
-}
-
+/* Center the box container vertically and horizontally */
 .box-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Arrange the boxes vertically */
     margin-top: 20px; /* Adjust margin as needed */
 }
 
+/* Style for the boxes */
 .box {
     width: 100px;
     height: 100px;
