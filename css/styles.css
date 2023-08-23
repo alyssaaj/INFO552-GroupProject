@@ -636,3 +636,78 @@ footer hr {
 /* =============
     Lost & Found
 ============= */
+/* =============
+    Local Shelters
+============= */
+#localshelters-content .shelter-grid {
+  display: -ms-grid;
+  display: grid;
+  padding: 8px;
+  margin: 16px;
+  border: 2px solid var(--green);
+  background-color: var(--lightgreen);
+  -ms-grid-columns: 30% auto;
+  grid-template-columns: 30% auto;
+      grid-template-areas: "SL SN" "SL SI";
+}
+#localshelters-content .shelter-grid .shelter-logo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: SL;
+  text-align: center;
+}
+#localshelters-content .shelter-grid .shelter-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: SN;
+}
+#localshelters-content .shelter-grid .shelter-info {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: SI;
+}
+#localshelters-content .shelter-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+#localshelters-content .shelter-links button {
+  margin: 8px;
+  background-color: var(--green);
+}
+#localshelters-content .shelter-links button a {
+  text-decoration: none;
+  color: var(--cream);
+}
+
+/* =============
+    Pet Friendly Places
+============= */
+#petfriendlyplaces-content h2 {
+  padding-left: 16px;
+}
+#petfriendlyplaces-content h3 {
+  padding-left: 32px;
+  color: var(--green);
+}
+#petfriendlyplaces-content h3 a {
+  text-decoration: none;
+  color: var(--green);
+}
+#petfriendlyplaces-content h3 a:hover {
+  color: var(--brown);
+}
+#petfriendlyplaces-content p {
+  padding-left: 64px;
+}
+@media (min-width: 1100px) {
+  #petfriendlyplaces-content .pfp-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+    grid-template-columns: 50% auto;
+    grid-template-area: "o t";
+  }
+}
