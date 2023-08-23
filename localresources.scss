@@ -1,0 +1,27 @@
+//local resources//
+
+
+#localresources-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the content takes at least the full viewport height */
+}
+
+#index-content {
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin: 10px;
+}
