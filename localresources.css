@@ -1,0 +1,25 @@
+/* Center the box container vertically and horizontally */
+.box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; /* Arrange the boxes vertically */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+/* Style for the boxes */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  margin: 10px;
+}
