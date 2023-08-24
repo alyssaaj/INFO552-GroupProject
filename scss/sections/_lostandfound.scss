@@ -18,21 +18,21 @@
 .lost-pet,
 .found-pet {
     flex: 1; 
-    padding: 10px; /* Add spacing around each box */
-    box-sizing: border-box; /* Include padding in the width calculation */
-    text-align: center; /* Center text within each box */
+    padding: 10px; 
+    box-sizing: border-box; 
+    text-align: center; 
 }
 
 .lost-pet img,
 .found-pet img {
     max-width: 100%;
-    height: 300px; /* Let the height adjust automatically to maintain aspect ratio */
-    display: block; /* Center the image within its container */
-    margin: 0 auto; /* Center the image horizontally */
+    height: 300px;
+    display: block; 
+    margin: 0 auto; 
 }
 
 .lost-pet a,
 .found-pet a {
     display: inline-block;
-    margin-top: 10px; /* Add spacing below the paragraphs */
+    margin-top: 10px; 
 }
