@@ -1,0 +1,53 @@
+/* =============
+    Local Shelters
+============= */
+
+#localshelters-content{
+
+  .shelter-grid {
+    padding: 8px;
+    margin: 16px;
+    border: 2px solid var(--green);
+    background-color: var(--lightgreen);
+    .shelter-logo{
+      text-align: center;
+    }
+
+    @media (min-width: 1100px) {
+      display: grid;
+      grid-template-columns: 30% auto;
+      grid-template-areas:
+      "SL SN"
+      "SL SI";
+
+      .shelter-logo {
+        grid-area: SL;
+        text-align: center;
+      }
+      .shelter-name {
+        grid-area: SN;
+      }
+
+      .shelter-info {
+        grid-area: SI;
+      }
+    }
+
+  }
+
+  .shelter-links {
+    display: flex;
+    list-style: none;
+    button {
+      margin: 8px;
+      background-color: var(--green);
+      a {
+        text-decoration: none;
+        color: var(--cream);
+      }
+      a:hover {
+        color: var(--brown);
+      }
+    }
+  }
+}
