@@ -5,26 +5,32 @@
 #localshelters-content{
 
   .shelter-grid {
-    display: grid;
     padding: 8px;
     margin: 16px;
     border: 2px solid var(--green);
     background-color: var(--lightgreen);
-    grid-template-columns: 30% auto;
-    grid-template-areas:
-    "SL SN"
-    "SL SI";
-
-    .shelter-logo {
-      grid-area: SL;
+    .shelter-logo{
       text-align: center;
     }
-    .shelter-name {
-      grid-area: SN;
-    }
 
-    .shelter-info {
-      grid-area: SI;
+    @media (min-width: 1100px) {
+      display: grid;
+      grid-template-columns: 30% auto;
+      grid-template-areas:
+      "SL SN"
+      "SL SI";
+
+      .shelter-logo {
+        grid-area: SL;
+        text-align: center;
+      }
+      .shelter-name {
+        grid-area: SN;
+      }
+
+      .shelter-info {
+        grid-area: SI;
+      }
     }
 
   }
@@ -38,6 +44,9 @@
       a {
         text-decoration: none;
         color: var(--cream);
+      }
+      a:hover {
+        color: var(--brown);
       }
     }
   }

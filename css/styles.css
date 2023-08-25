@@ -640,32 +640,47 @@ footer hr {
     Local Shelters
 ============= */
 #localshelters-content .shelter-grid {
-  display: -ms-grid;
-  display: grid;
   padding: 8px;
   margin: 16px;
   border: 2px solid var(--green);
   background-color: var(--lightgreen);
-  -ms-grid-columns: 30% auto;
-  grid-template-columns: 30% auto;
-      grid-template-areas: "SL SN" "SL SI";
 }
 #localshelters-content .shelter-grid .shelter-logo {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: SL;
   text-align: center;
 }
-#localshelters-content .shelter-grid .shelter-name {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: SN;
+@media (min-width: 1100px) {
+  #localshelters-content .shelter-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% auto;
+    grid-template-columns: 30% auto;
+        grid-template-areas: "SL SN" "SL SI";
+  }
+  #localshelters-content .shelter-grid .shelter-logo {
+    grid-area: SL;
+    text-align: center;
+  }
+  #localshelters-content .shelter-grid .shelter-name {
+    grid-area: SN;
+  }
+  #localshelters-content .shelter-grid .shelter-info {
+    grid-area: SI;
+  }
 }
-#localshelters-content .shelter-grid .shelter-info {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: SI;
+@media (min-width: 1100px) {
+  #localshelters-content .shelter-grid .shelter-logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+  #localshelters-content .shelter-grid .shelter-name {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  #localshelters-content .shelter-grid .shelter-info {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
 }
 #localshelters-content .shelter-links {
   display: -webkit-box;
@@ -680,6 +695,9 @@ footer hr {
 #localshelters-content .shelter-links button a {
   text-decoration: none;
   color: var(--cream);
+}
+#localshelters-content .shelter-links button a:hover {
+  color: var(--brown);
 }
 
 /* =============
@@ -710,4 +728,38 @@ footer hr {
     grid-template-columns: 50% auto;
     grid-template-area: "o t";
   }
+}
+
+/* =============
+    Local Shelters
+============= */
+#petcareservices-content .pcs {
+  padding: 8px;
+  margin: 16px;
+  border: 8px solid var(--lightgreen);
+  background-color: var(--cream);
+}
+#petcareservices-content h2 {
+  text-align: center;
+}
+#petcareservices-content h2 a {
+  text-decoration: none;
+  color: var(--green);
+}
+#petcareservices-content h2 a:hover {
+  color: var(--brown);
+}
+@media (min-width: 1100px) {
+  #petcareservices-content .services-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+    grid-template-columns: 33% 33% 33%;
+  }
+}
+#petcareservices-content p {
+  margin: 8px;
+}
+#petcareservices-content ul {
+  margin-top: 0px;
 }
