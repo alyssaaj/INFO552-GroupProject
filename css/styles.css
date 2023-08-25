@@ -2,8 +2,6 @@
     Mixins
 ============= */
 /* ---------------- Font Sizing ---------------- */
-@import "https://unpkg.com/open-props";
-@import "https://unpkg.com/open-props/normalize.min.css";
 html {
   font-size: 100%;
 }
@@ -551,7 +549,7 @@ header #burger-container {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-@media (min-width: 1100px){
+@media (min-width: 1100px) {
   header #logo {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
