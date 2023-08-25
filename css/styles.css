@@ -336,7 +336,7 @@ template {
     Base
 ============= */
 body {
-  background-color: var(--white);
+  background-color: pink;
   font-family: "Roboto Serif", serif;
 }
 body h1 {
@@ -717,7 +717,8 @@ footer hr {
 .found-pet a {
   display: inline-block;
   margin-top: 10px;
-=======
+}
+
 /* =============
     Local Shelters
 ============= */
