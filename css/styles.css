@@ -14,8 +14,19 @@ html {
   --black: #000000;
   --white: #ffffff;
   --cream: #F3F1EA;
+  --darkgreen: #778270;
   --green: #9FAE9C;
   --lightgreen: #D2D7C4;
+  --brown: #433535;
+}
+
+[data-dark-mode] {
+  --black: #ffffff;
+  --white: #000000;
+  --cream: #778270;
+  --lightgreen: #9FAE9C;
+  --darkgreen: #F3F1EA;
+  --green: #D2D7C4;
   --brown: #433535;
 }
 
@@ -336,7 +347,7 @@ template {
     Base
 ============= */
 body {
-  background-color: pink;
+  background-color: var(--white);
   font-family: "Roboto Serif", serif;
 }
 body h1 {
@@ -500,7 +511,9 @@ header #logo-phone {
 @media (max-width: 473px) {
   header #logo-phone {
     display: block;
-    padding: 8.48px 0;
+    padding: 0;
+    padding-left: 8px;
+    margin: 0;
   }
   header #logo-top {
     display: none;
@@ -607,6 +620,7 @@ footer #social-icons li {
   list-style: none;
   margin: 0 10px;
   font-size: 1.5rem;
+  color: var(--brown);
 }
 footer #social-icons li a:link, footer #social-icons li a:visited {
   color: var(--brown);
@@ -620,10 +634,43 @@ footer #copy-right {
 footer hr {
   border: 1px solid var(--brown);
 }
+footer .hide-sun {
+  display: none;
+}
+footer .hide-moon {
+  display: none;
+}
+footer .dark-mode-toggle {
+  color: var(--brown);
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
 
 /* =============
     Index
 ============= */
+#index-content {
+  /*#myCarousel {
+    --f-carousel-spacing: 10px;
+    --f-carousel-slide-width: 60%;
+  }
+
+  #myCarousel .f-carousel__slide {
+    padding: 50px;
+    background: #eee;
+    //text-align: center;
+      //img {
+      //  width: 80%;
+      //  height: 80%;
+      //  object-fit: cover;
+      //  margin: 0;
+      //}
+  }*/
+}
+
 /* =============
     Connect
 ============= */
@@ -959,7 +1006,7 @@ footer hr {
 }
 #petfriendlyplaces-content h3 a {
   text-decoration: none;
-  color: var(--green);
+  color: var(--darkgreen);
 }
 #petfriendlyplaces-content h3 a:hover {
   color: var(--brown);
@@ -991,7 +1038,7 @@ footer hr {
 }
 #petcareservices-content h2 a {
   text-decoration: none;
-  color: var(--green);
+  color: var(--darkgreen);
 }
 #petcareservices-content h2 a:hover {
   color: var(--brown);
