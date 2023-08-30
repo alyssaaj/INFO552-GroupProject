@@ -36,3 +36,19 @@ $screen-xl-min: 1200px;
   --green: #D2D7C4;// lightgreen
   --brown: #433535; //brown
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #ffffff; //white
+    --white: #000000; //black
+    --cream: #778270; //darkgreen
+    --lightgreen: #9FAE9C; //green
+    --darkgreen: #F3F1EA; //cream
+    --green: #D2D7C4;// lightgreen
+    --brown: #433535; //brown
+  }
+
+  .dark-mode-toggle {
+    display: none;
+  }
+}

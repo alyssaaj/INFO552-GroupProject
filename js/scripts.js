@@ -35,8 +35,17 @@ toggleBtn.addEventListener("click", function () {
   moon.classList.toggle('hide-moon')
 });
 
+
+// AOS
+AOS.init();
+
+// index slide show
+function showImage(picName){
+  document.getElementById("main_pic").src=picName;
+}
+
 // Slide Show
-/*let slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -61,4 +70,4 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-}*/
+}
