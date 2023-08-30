@@ -48,13 +48,15 @@ function showImage(picName){
 let slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+$(document).ready(function () {
+  $(".first-div a").fancybox({
+    loop: true,
+    buttons: ["zoom", "slideshow", "fullscreen", "close"],
+  });
+});
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+const container = document.getElementById("myCarousel");
+const options = { infinite: false };
 
 function showSlides(n) {
   let i;
