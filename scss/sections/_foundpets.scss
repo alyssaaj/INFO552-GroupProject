@@ -1,54 +1,67 @@
 /* =============
     Found Pets
 ============= */
-.found-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+#found-content {
 
-.found-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
+  /*.found-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
 
-.box {
-    flex: 1;
-    padding: 8px;
-    margin: 16px;
-    border: 8px solid var(--lightgreen);
-    background-color: var(--cream);
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center; 
-    box-sizing: border-box;
-    max-width: 300px;
-    height: 400px; /* Set a fixed height for the boxes */
-}
+  .found-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+  }*/
 
-.box img {
-    width: 100%;
-    height: 100%; /* Make the image cover the entire box */
-    object-fit: cover;
-    margin-top: 0;
-    margin-bottom: 8px;
-}
 
-.box h2 {
-    margin-top: 0;
-}
+  .box {
+      flex: 1;
+      padding: 8px;
+      margin: 16px;
+      border: 8px solid var(--lightgreen);
+      background-color: var(--cream);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-sizing: border-box;
+      max-width: 300px;
+      height: 400px; /* Set a fixed height for the boxes */
+  }
 
-h2 a {
-    text-decoration: none;
-    color: var(--green);
-}
+  .box img {
+      width: 100%;
+      height: 100%; /* Make the image cover the entire box */
+      object-fit: cover;
+      margin-top: 0;
+      margin-bottom: 8px;
+  }
 
-h2 a:hover {
-    color: var(--brown);
+  .box h2 {
+      margin-top: 0;
+  }
+
+  h2 a {
+      text-decoration: none;
+      color: var(--green);
+  }
+
+  h2 a:hover {
+      color: var(--brown);
+  }
+
+  .found-container {
+    @media (min-width: 1100px) {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      background-color: blue;
+    }
+  }
+
 }

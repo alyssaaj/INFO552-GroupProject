@@ -39,7 +39,7 @@ toggleBtn.addEventListener("click", function () {
 // AOS
 AOS.init();
 
-// index slide show
+/*// index slide show
 function showImage(picName){
   document.getElementById("main_pic").src=picName;
 }
@@ -72,4 +72,4 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-}
+}*/
