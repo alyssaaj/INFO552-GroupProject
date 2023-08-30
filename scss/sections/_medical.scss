@@ -3,12 +3,11 @@
 ============= */
 
 #medical-content {
-  //@import "https://unpkg.com/open-props";
-  //@import "https://unpkg.com/open-props/normalize.min.css";
 
 
   h2 {
     text-decoration: underline;
+    
 
   }
 
@@ -23,7 +22,7 @@
 
   .media-scroller {
       display: grid;
-      grid-auto-flow: column;
+      // grid-auto-flow: column;
       grid-auto-columns: 25%;
       gap: var(--size-3);
 
@@ -35,13 +34,14 @@
   }
   .media-element {
       display: grid;
-      grid-template-rows: min-content;
-      gap: var(--size-3);
-      padding: var(--size-3);
-      background: var(--surface-2);
-      border-radius: var(--radius-2);
+      // grid-template-rows: min-content;
+      gap: 20px;
+      padding: 3px;
+      // gap: var(--size-3);
+      // padding: var(--size-3);
+      border-radius: 10px;
       background-color: var(--green);
-      box-shadow: var(--shadow-3);
+      box-shadow: inset;
 
 
   }
@@ -50,6 +50,7 @@
       inline-size: 100%;
       aspect-ratio: 16 / 9;
       object-fit: cover;
+      border-radius: 10px;
 
   }
 }
