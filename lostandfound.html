@@ -49,29 +49,36 @@
         </ul>
       </nav>
     </header>
-
     <div id="main-content-grid">
-	<!-- CHANGE ID TO CURRENTFILENAME-content and use this id to wrap the entire scss file for the page-->
-    <section id="localresources-content">
-        <div class="lostandfound-container">
-            <h1>Lost and Found</h1>
 
-            <div class="lostfound-box">
-                <div class="lost-pet">
-                    <a href="lostpets.html">
-                    <img src="Images/lostdog.jpg" alt="picture of missing poster on light pole">
-                    <h2>Browse Lost Pets</h2>     </a>
-                </div>
-
-                <div class="found-pet">
-                    <a href="foundpets.html">
-                    <img src="Images/lostandfoundcat2.jpg" alt="orange cat looking away from camera">
-                    <h2>Browse Found Pets</h2></a>
-                                    </div>
-            </div>
-        </div>
-    </section>
-
+      <!-- CHANGE ID TO CURRENTFILENAME-content and use this id to wrap the entire scss file for the page-->
+      <section id="lostandfound-content">
+        <h1>Lost and Found</h1>
+          <div class="lostandfound-container">
+              
+      
+              <div class="box">
+                  <div class="lost-pet">
+                     <h2><a href="lostpets.html">
+                          <img src="Images/lostdog.jpg" alt="picture of missing poster on light pole">
+                          Browse Lost Pets</h2>
+                      </a>
+                      <button class="report-button">Report Lost Pet</button>
+                  </div>
+              </div>
+              
+              <div class="box">
+                  <div class="found-pet">
+                      <h2><a href="foundpets.html">
+                          <img src="Images/lostandfoundcat2.jpg" alt="orange cat looking away from camera">
+                          Browse Found Pets</h2>
+                      </a>
+                      <button class="found-button">Report Found Pet</button>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
     <footer class="footer-grid">
       <h3>CRITTER CONNECTIONS OF FAIRMOUNT PHILADELPHIA</h3>
       <hr width="70%">
@@ -89,7 +96,6 @@
       </ul>
       <p id=copy-right>Copyright <i class="fa-regular fa-copyright"></i> 2023. All Rights Reserved.</p>
     </footer>
-  </div>
   </main>
     <script src="js/scripts-dist.js"></script>
 
