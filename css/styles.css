@@ -14,11 +14,36 @@ html {
   --black: #000000;
   --white: #ffffff;
   --cream: #F3F1EA;
+  --darkgreen: #778270;
   --green: #9FAE9C;
   --lightgreen: #D2D7C4;
   --brown: #433535;
 }
 
+[data-dark-mode] {
+  --black: #ffffff;
+  --white: #000000;
+  --cream: #778270;
+  --lightgreen: #9FAE9C;
+  --darkgreen: #F3F1EA;
+  --green: #D2D7C4;
+  --brown: #433535;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #ffffff;
+    --white: #000000;
+    --cream: #778270;
+    --lightgreen: #9FAE9C;
+    --darkgreen: #F3F1EA;
+    --green: #D2D7C4;
+    --brown: #433535;
+  }
+  .dark-mode-toggle {
+    display: none;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -336,7 +361,7 @@ template {
     Base
 ============= */
 body {
-  background-color: pink;
+  background-color: var(--white);
   font-family: "Roboto Serif", serif;
 }
 body h1 {
@@ -500,7 +525,9 @@ header #logo-phone {
 @media (max-width: 473px) {
   header #logo-phone {
     display: block;
-    padding: 8.48px 0;
+    padding: 0;
+    padding-left: 8px;
+    margin: 0;
   }
   header #logo-top {
     display: none;
@@ -607,6 +634,7 @@ footer #social-icons li {
   list-style: none;
   margin: 0 10px;
   font-size: 1.5rem;
+  color: var(--brown);
 }
 footer #social-icons li a:link, footer #social-icons li a:visited {
   color: var(--brown);
@@ -620,10 +648,49 @@ footer #copy-right {
 footer hr {
   border: 1px solid var(--brown);
 }
+footer .hide-sun {
+  display: none;
+}
+footer .hide-moon {
+  display: none;
+}
+footer .dark-mode-toggle {
+  color: var(--brown);
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
 
 /* =============
     Index
 ============= */
+#index-content {
+  color: var(--brown);
+}
+#index-content table {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#index-content td img {
+  width: 100%;
+}
+#index-content h2 {
+  text-align: center;
+}
+#index-content p {
+  text-align: center;
+}
+#index-content p a {
+  text-decoration: none;
+  color: var(--darkgreen);
+}
+#index-content p a:hover {
+  color: var(--brown);
+}
+
 /* =============
     Connect
 ============= */
@@ -671,16 +738,28 @@ footer hr {
 }
 
 .box {
-  background-color: #F3F1EA;
-  padding: 15px;
+  padding: 8px;
+  margin: 16px;
+  border: 8px solid var(--lightgreen);
+  background-color: var(--cream);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
 .box img {
   max-width: 100%;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .center-content {
@@ -701,6 +780,19 @@ footer hr {
 
 .box p {
   font-size: 15px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h2 a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+h2 a:hover {
+  color: var(--brown);
 }
 
 /* =============
@@ -750,46 +842,114 @@ footer hr {
 /* =============
     Lost & Found
 ============= */
-#localresources-content h1 {
+.lostandfound-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
 .lostandfound-container {
-  text-align: center;
-}
-
-.lostfound-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.lost-pet,
-.found-pet {
+.box {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 10px;
+  padding: 8px;
+  margin: 16px;
+  border: 8px solid var(--lightgreen);
+  background-color: var(--cream);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  text-align: center;
+  max-width: 300px;
 }
 
-.lost-pet img,
-.found-pet img {
-  max-width: 100%;
-  height: 300px;
-  display: block;
-  margin: 0 auto;
+.box img {
+  width: 100%;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
-.lost-pet a,
-.found-pet a {
-  display: inline-block;
-  margin-top: 10px;
+.box h2 {
+  margin-top: 0;
+}
+
+h2 a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+h2 a:hover {
+  color: var(--brown);
+}
+
+.report-button {
+  background-color: var(--green);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.report-button:hover {
+  background-color: var(--brown);
+}
+
+.found-button {
+  background-color: var(--green);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.found-button:hover {
+  background-color: var(--brown);
 }
 
 /* =============
@@ -803,6 +963,7 @@ footer hr {
 }
 #localshelters-content .shelter-grid .shelter-logo {
   text-align: center;
+  padding-top: 16px;
 }
 @media (min-width: 1100px) {
   #localshelters-content .shelter-grid {
@@ -815,6 +976,7 @@ footer hr {
   #localshelters-content .shelter-grid .shelter-logo {
     grid-area: SL;
     text-align: center;
+    padding-top: 32px;
   }
   #localshelters-content .shelter-grid .shelter-name {
     grid-area: SN;
@@ -868,7 +1030,7 @@ footer hr {
 }
 #petfriendlyplaces-content h3 a {
   text-decoration: none;
-  color: var(--green);
+  color: var(--darkgreen);
 }
 #petfriendlyplaces-content h3 a:hover {
   color: var(--brown);
@@ -900,7 +1062,7 @@ footer hr {
 }
 #petcareservices-content h2 a {
   text-decoration: none;
-  color: var(--green);
+  color: var(--darkgreen);
 }
 #petcareservices-content h2 a:hover {
   color: var(--brown);
@@ -918,4 +1080,167 @@ footer hr {
 }
 #petcareservices-content ul {
   margin-top: 0px;
+}
+
+/* =============
+    Found Pets
+============= */
+.found-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.found-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 8px;
+  margin: 16px;
+  border: 8px solid var(--lightgreen);
+  background-color: var(--cream);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 300px;
+  height: 400px; /* Set a fixed height for the boxes */
+}
+
+.box img {
+  width: 100%;
+  height: 100%; /* Make the image cover the entire box */
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.box h2 {
+  margin-top: 0;
+}
+
+h2 a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+h2 a:hover {
+  color: var(--brown);
+}
+
+/* =============
+    Lost Pets
+============= */
+.lostandfound-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.lostandfound-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 8px;
+  margin: 16px;
+  border: 8px solid var(--lightgreen);
+  background-color: var(--cream);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 300px;
+}
+
+.box img {
+  width: 100%;
+  height: 200px; /* Set a fixed height for the images */
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.box h2 {
+  margin-top: 0;
+}
+
+h2 a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+h2 a:hover {
+  color: var(--brown);
 }
