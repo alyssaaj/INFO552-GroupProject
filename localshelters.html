@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,400;1,8..144,500&display=swap" rel="stylesheet">
+
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="css/styles.css">
     <title>Critter Connections</title>
 </head>
@@ -19,7 +23,7 @@
       <div id="logo"><a href="index.html">
         <h1 id="logo-top">CRITTER CONNECTIONS</h1>
         <p id="logo-bottom"><i>of Fairmount Philadelphia</i></p>
-        <h1 id="logo-phone">CCFP</h1>
+        <img id="logo-phone" src="img/logo.png" alt="CCFP" width="96px" height="96px"></img>
       </a></div>
 
       <section id="burger-container">
@@ -58,7 +62,7 @@
         <div class="shelter-grid">
 
             <div class="shelter-logo">
-              <img src="img/Morris_logo.png" alt="Morris Animal Refuge Logo" width=200px>
+              <img src="img/Morris_logo.png" alt="Morris Animal Refuge Logo" width=200px >
             </div>
 
             <div class="shelter-name">
@@ -80,7 +84,7 @@
                     <li>Sunday: 12 - 5pm</li>
                   </ul>
                 </ul>
-                <ul class="shelter-links">
+                <ul class="shelter-links" data-aos="zoom-in">
                   <li><button><a href="https://morrisanimalrefuge.org/" target="_blank">Website</a></button></li>
                   <li><button><a href="https://morrisanimalrefuge.org/adoptable-pets/" target="_blank">Adopt</a></button></li>
                   <li><button><a href="https://morrisanimalrefuge.org/foster/" target="_blank">Foster</a></button></li>
@@ -94,7 +98,7 @@
           <div class="shelter-grid">
 
               <div class="shelter-logo">
-                <img src="img/streetTails_logo.png" alt="Street Tails Animal Rescue Logo" width=200px>
+                <img src="img/streetTails_logo.png" alt="Street Tails Animal Rescue Logo" width=200px >
               </div>
 
               <div class="shelter-name">
@@ -117,7 +121,7 @@
                     </ul>
                   </ul>
 
-                  <ul class="shelter-links">
+                  <ul class="shelter-links" data-aos="zoom-in">
                     <li><button><a href="https://www.streettails.org/" target="_blank">Website</a></button></li>
                     <li><button><a href="https://www.streettails.org/adopt" target="_blank">Adopt</a></button></li>
                     <li><button><a href="https://wix.123formbuilder.com/form-4417326/foster-application" target="_blank">Foster</a></button></li>
@@ -153,7 +157,7 @@
                         <li>Sunday: 11am - 5pm</li>
                       </ul>
                     </ul>
-                    <ul class="shelter-links">
+                    <ul class="shelter-links" data-aos="zoom-in">
                       <li><button><a href="https://phillypaws.org/" target="_blank">Website</a></button></li>
                       <li><button><a href="https://phillypaws.org/adopt/" target="_blank">Adopt</a></button></li>
                       <li><button><a href="https://phillypaws.org/foster/" target="_blank">Foster</a></button></li>
@@ -189,7 +193,7 @@
                           <li>Sunday: 11am - 5pm</li>
                         </ul>
                       </ul>
-                      <ul class="shelter-links">
+                      <ul class="shelter-links" data-aos="zoom-in">
                         <li><button><a href="https://lecatcafe.org/" target="_blank">Website</a></button></li>
                         <li><button><a href="https://lecatcafe.org/adopt/" target="_blank">Adopt</a></button></li>
                         <li><button><a href="https://lecatcafe.org/foster/" target="_blank">Foster</a></button></li>
@@ -211,12 +215,19 @@
         <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
         <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
         <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+        <li>
+          <button class="dark-mode-toggle">
+              <i class="fa-solid fa-moon"></i>
+              <i class="fa-solid fa-sun hide-sun"></i>
+          </button>
+        </li>
       </ul>
       <p id=copy-right>Copyright <i class="fa-regular fa-copyright"></i> 2023. All Rights Reserved.</p>
     </footer>
   </div>
   </main>
-    <script src="js/scripts-dist.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/scripts-dist.js"></script>
 
 </body>
 

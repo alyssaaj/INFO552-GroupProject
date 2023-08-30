@@ -18,6 +18,7 @@ footer {
       list-style: none;
       margin: 0 10px;
       font-size: rem-calc(24);
+      color: var(--brown);
       a:link, a:visited {
         color: var(--brown);
       }
@@ -33,5 +34,22 @@ footer {
 
   hr {
     border: 1px solid var(--brown);
+  }
+
+  .hide-sun{
+    display: none;
+  }
+
+  .hide-moon{
+      display: none;
+  }
+
+  .dark-mode-toggle {
+    color: var(--brown);
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
   }
 }

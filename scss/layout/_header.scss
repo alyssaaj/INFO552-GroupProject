@@ -25,7 +25,9 @@ header {
     @media (max-width: 473px) {
       #logo-phone {
         display: block;
-        padding: 8.48px 0;
+        padding: 0;
+        padding-left: 8px;
+        margin: 0;
       }
       #logo-top {
         display: none;
