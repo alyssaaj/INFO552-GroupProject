@@ -3,22 +3,20 @@
 ============= */
 #connect-content {
 
+ h1{
+text-align: center;
+ }
 
   h4 {
     font-family: 'Merriweather', serif;
     font-style: italic;
+    text-align: center;
   }
 
   p{
     text-align: center;
   }
 
-  // * {
-  //   box-sizing: border-box;
-  //   padding: 0;
-  //   margin: 0;
-
-  // }
 
   .first-div{
     margin-top: 50px;
@@ -51,7 +49,6 @@
     }
   .img_title{
     padding: 10px;
-    // font-size: 15px;
   }
 
 }
@@ -83,25 +80,27 @@
   }
 }
 
+  }
 
 
+#playdate-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
 
-#playdate-button {
-margin-left: 100px;
-padding: 30px;
-background-color: var(--green);
-border-radius: 20px;
-
-}
-
-a {
-  text-decoration: none;
-  color: var(--white);
-}
-
-a:hover {
-  color: var(--brown);
-}
-
+      margin: 8px;
+      padding: 20px;
+      background-color: var(--green);
+      border-color: var(--lightgreen);
+      border-radius: 20px;
+      a {
+        text-decoration: none;
+        color: var(--white);
+      }
+      a:hover {
+        color: var(--brown);
+      }
+    }
   }
 }

@@ -703,9 +703,13 @@ footer .dark-mode-toggle {
 /* =============
     Connect
 ============= */
+#connect-content h1 {
+  text-align: center;
+}
 #connect-content h4 {
   font-family: "Merriweather", serif;
   font-style: italic;
+  text-align: center;
 }
 #connect-content p {
   text-align: center;
@@ -786,17 +790,29 @@ footer .dark-mode-toggle {
 #connect-content .connect_grid .event a:hover {
   color: var(--brown);
 }
-#connect-content .connect_grid #playdate-button {
-  margin-left: 100px;
-  padding: 30px;
+#connect-content #playdate-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#connect-content #playdate-button button {
+  margin: 8px;
+  padding: 20px;
   background-color: var(--green);
+  border-color: var(--lightgreen);
   border-radius: 20px;
 }
-#connect-content .connect_grid a {
+#connect-content #playdate-button button a {
   text-decoration: none;
   color: var(--white);
 }
-#connect-content .connect_grid a:hover {
+#connect-content #playdate-button button a:hover {
   color: var(--brown);
 }
 
