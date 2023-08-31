@@ -4,52 +4,60 @@
 
 #medical-content {
 
-/*   h2 {
-     text-decoration: underline;
+
+  h1{
+    text-align: center;
+  }
+
+  h4 {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  .media-scroller {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 25%;
+      gap: 20px;
+
+      overflow-x: auto;
+      overscroll-behavior-inline: contain;
 
 
-   }
 
-   h4 {
-     font-family: 'Merriweather', serif;
-     font-style: italic;
-   }
-
-   p{
-     text-align: center;
-   }
-
-   .media-scroller {
-       display: grid;
-      //grid-auto-flow: column;
-       grid-auto-columns: 25%;
-       gap: 20px;
-
-       overflow-x: auto;
-      //overscroll-behavior-inline: contain;
+  }
+  .media-element {
+      display: grid;
+      grid-template-rows: min-content;
+      gap: 20px;
+      padding: 3px;
+      // gap: var(--size-3);
+      // padding: var(--size-3);
+      border-radius: 10px;
+      background-color: var(--green);
+      box-shadow: inset;
 
 
+  }
 
-   }
-   .media-element {
-       display: grid;
-      //grid-template-rows: min-content;
-       gap: 20px;
-       padding: 3px;
-      //gap: var(--size-3);
-      //padding: var(--size-3);
-       border-radius: 10px;
-       background-color: var(--green);
-       box-shadow: inset;
+  .media-element > img {
+      inline-size: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 10px;
 
+  }
 
-   }
+ a {
+    text-decoration: none;
+    color: var(--white);
+}
 
-   .media-element > img {
-       inline-size: 100%;
-       aspect-ratio: 16 / 9;
-       object-fit: cover;
-       border-radius: 10px;
-
-   }*/
- }
+a:hover {
+    color: var(--brown);
+}
+}

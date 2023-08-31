@@ -703,9 +703,6 @@ footer .dark-mode-toggle {
 /* =============
     Connect
 ============= */
-#connect-content h2 {
-  text-decoration: underline;
-}
 #connect-content h4 {
   font-family: "Merriweather", serif;
   font-style: italic;
@@ -715,7 +712,6 @@ footer .dark-mode-toggle {
 }
 #connect-content .first-div {
   margin-top: 50px;
-  background-color: var(--green);
 }
 #connect-content .img_title {
   text-align: center;
@@ -727,20 +723,81 @@ footer .dark-mode-toggle {
 }
 @media (min-width: 1100px) {
   #connect-content img {
-    max-width: 1100px;
+    max-width: 400px;
   }
 }
 @media (min-width: 1100px) {
-  #connect-content .connect_grid {
-    padding: 20px;
-    margin: 5px;
+  #connect-content .connect_grid .first-div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr 10px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  #connect-content .connect_grid .first-div > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #connect-content .connect_grid .first-div > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  #connect-content .connect_grid .first-div > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  #connect-content .connect_grid .first-div > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  #connect-content .connect_grid .img_title {
+    padding: 10px;
   }
 }
-#connect-content #playdate-button {
+#connect-content .connect_grid .connect_grid img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+#connect-content .connect_grid .event {
+  padding: 8px;
+  margin: 10px;
+  border: 8px solid var(--lightgreen);
+  background-color: var(--cream);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+#connect-content .connect_grid .event a {
+  text-decoration: none;
+  color: var(--green);
+}
+#connect-content .connect_grid .event a:hover {
+  color: var(--brown);
+}
+#connect-content .connect_grid #playdate-button {
   margin-left: 100px;
   padding: 30px;
   background-color: var(--green);
   border-radius: 20px;
+}
+#connect-content .connect_grid a {
+  text-decoration: none;
+  color: var(--white);
+}
+#connect-content .connect_grid a:hover {
+  color: var(--brown);
 }
 
 /* =============
@@ -808,55 +865,52 @@ footer .dark-mode-toggle {
 /* =============
     Medical
 ============= */
-#medical-content {
-  /*   h2 {
-       text-decoration: underline;
-
-
-     }
-
-     h4 {
-       font-family: 'Merriweather', serif;
-       font-style: italic;
-     }
-
-     p{
-       text-align: center;
-     }
-
-     .media-scroller {
-         display: grid;
-        //grid-auto-flow: column;
-         grid-auto-columns: 25%;
-         gap: 20px;
-
-         overflow-x: auto;
-        //overscroll-behavior-inline: contain;
-
-
-
-     }
-     .media-element {
-         display: grid;
-        //grid-template-rows: min-content;
-         gap: 20px;
-         padding: 3px;
-        //gap: var(--size-3);
-        //padding: var(--size-3);
-         border-radius: 10px;
-         background-color: var(--green);
-         box-shadow: inset;
-
-
-     }
-
-     .media-element > img {
-         inline-size: 100%;
-         aspect-ratio: 16 / 9;
-         object-fit: cover;
-         border-radius: 10px;
-
-     }*/
+#medical-content h1 {
+  text-align: center;
+}
+#medical-content h4 {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+}
+#medical-content p {
+  text-align: center;
+}
+#medical-content .media-scroller {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
+  gap: 20px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+#medical-content .media-element {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: -webkit-min-content;
+  -ms-grid-rows: min-content;
+  grid-template-rows: -webkit-min-content;
+  grid-template-rows: min-content;
+  gap: 20px;
+  padding: 3px;
+  border-radius: 10px;
+  background-color: var(--green);
+  -webkit-box-shadow: inset;
+          box-shadow: inset;
+}
+#medical-content .media-element > img {
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+#medical-content a {
+  text-decoration: none;
+  color: var(--white);
+}
+#medical-content a:hover {
+  color: var(--brown);
 }
 
 /* =============
