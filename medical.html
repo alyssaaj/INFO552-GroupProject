@@ -15,40 +15,43 @@
 <body>
   <main class="content-grid">
     <div class="content-grid-item">
-    <header class="header-grid">
-      <div id="logo"><a href="index.html">
-        <h1 id="logo-top">CRITTER CONNECTIONS</h1>
-        <p id="logo-bottom"><i>of Fairmount Philadelphia</i></p>
-        <img id="logo-phone" src="img/logo.png" alt="CCFP" width="96px" height="96px"></img>
-      </a></div>
+      <header class="header-grid">
+        <div id="logo">
+          <a href="index.html">
+            <h1 id="logo-top">CRITTER CONNECTIONS</h1>
+            <p id="logo-bottom"><i>of Fairmount Philadelphia</i></p>
+            <img id="logo-phone" src="img/logo.png" alt="CCFP" width="96" height="96">
+          </a>
+      </div>
 
-      <section id="burger-container">
-						<button id="burger-btn">
-								<i class="fa-solid fa-bars"></i>
-						</button>
-			</section>
+        <section id="burger-container">
+  						<button id="burger-btn">
+  								<i class="fa-solid fa-bars"></i>
+  						</button>
+  			</section>
 
-      <nav id="main-menu">
-        <ul>
-          <li><a href="connect.html">Connect</a></li>
-          <div class="dropdown">
+        <nav id="main-menu">
+          <ul>
+            <li><a href="connect.html">Connect</a></li>
             <li>
-              <button class="dropdownbtn">
-                <a href="localresources.html">Local Resources</a>
-              </button>
-            </a></li>
-            <div class="dropdown-content">
-              <a href="petfriendlyplaces.html">Pet Friendly Places</a>
-              <a href="petcareservices.html">Pet Care Services</a>
-              <a href="localshelters.html">Local Shelters</a>
-            </div>
+              <div class="dropdown">
 
-          </div>
-          <li><a href="medical.html">Medical</a></li>
-          <li><a href="lostandfound.html">Lost & Found</a></li>
-        </ul>
-      </nav>
-    </header>
+                <button class="dropdownbtn" onclick="window.location.href='localresources.html';">Local Resources
+                  <!--<a href="localresources.html">Local Resources</a>-->
+                </button>
+
+              <div class="dropdown-content">
+                <a href="petfriendlyplaces.html">Pet Friendly Places</a>
+                <a href="petcareservices.html">Pet Care Services</a>
+                <a href="localshelters.html">Local Shelters</a>
+              </div>
+            </div>
+            </li>
+            <li><a href="medical.html">Medical</a></li>
+            <li><a href="lostandfound.html">Lost & Found</a></li>
+          </ul>
+        </nav>
+      </header>
 
     <div id="main-content-grid">
 	<!-- CHANGE ID TO CURRENTFILENAME-content and use this id to wrap the entire scss file for the page-->
