@@ -931,6 +931,13 @@ footer .dark-mode-toggle {
   color: var(--brown);
 }
 
+@media (min-width: 414px) {
+  #medical-content {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
+}
+
 /* =============
     Lost & Found
 ============= */

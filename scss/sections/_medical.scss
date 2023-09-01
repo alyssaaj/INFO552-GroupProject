@@ -61,3 +61,22 @@ a:hover {
     color: var(--brown);
 }
 }
+
+#medical-content {
+  // display: grid;
+  // grid-template-columns: 16px auto 16px;
+  // grid-template-areas: ". content .";
+
+  @media (min-width: 414px)  {
+    grid-template-columns: auto 1200px auto;
+  }
+
+  // .content-grid-item {
+  //   grid-area: content;
+  //   background-color: var(--cream);
+  //   padding-top: 128px;
+  // }
+
+}
+
+
