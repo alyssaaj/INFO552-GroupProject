@@ -662,6 +662,10 @@ footer .dark-mode-toggle {
   margin: 0;
   padding: 0;
 }
+footer .colorLink img {
+  width: 28px;
+  height: 32px;
+}
 
 /* =============
     Index
@@ -941,42 +945,29 @@ footer .dark-mode-toggle {
 /* =============
     Lost & Found
 ============= */
-#lostandfound-content .lostandfound-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-#lostandfound-content .lostandfound-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
-  -ms-flex-wrap: wrap;
+#lostandfound-content {
+  /*.lostandfound-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .lostandfound-container {
+      display: flex;
+      gap: 20px;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      align-items: center;
+      justify-content: center;
+  }*/
 }
 #lostandfound-content .box {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 8px;
-  margin: 16px;
+  margin: 16px auto;
   border: 8px solid var(--lightgreen);
   background-color: var(--cream);
   display: -webkit-box;
@@ -1039,6 +1030,16 @@ footer .dark-mode-toggle {
 }
 #lostandfound-content .found-button:hover {
   background-color: var(--brown);
+}
+@media (min-width: 1100px) {
+  #lostandfound-content .lostandfound-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 0px auto;
+    grid-template-columns: 50% auto;
+    gap: 0px;
+    margin: 16px;
+  }
 }
 
 /* =============
@@ -1174,42 +1175,29 @@ footer .dark-mode-toggle {
 /* =============
     Found Pets
 ============= */
-#found-content .found-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-#found-content .found-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
-  -ms-flex-wrap: wrap;
+#found-content {
+  /*.found-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .found-container {
+      display: flex;
+      gap: 20px;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      align-items: center;
+      justify-content: center;
+  }*/
 }
 #found-content .box {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 8px;
-  margin: 16px;
+  margin: 16px auto;
   border: 8px solid var(--lightgreen);
   background-color: var(--cream);
   display: -webkit-box;
@@ -1246,46 +1234,41 @@ footer .dark-mode-toggle {
 #found-content h2 a:hover {
   color: var(--brown);
 }
+@media (min-width: 1100px) {
+  #found-content .found-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+    grid-template-columns: 33% 33% 33%;
+  }
+}
 
 /* =============
     Lost Pets
 ============= */
-#lostpets-content .lostpets-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-#lostpets-content .lostpets-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
-  -ms-flex-wrap: wrap;
+#lostpets-content {
+  /*.lostpets-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .lostpets-container {
+      display: flex;
+      gap: 20px;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      align-items: center;
+      justify-content: center;
+  }*/
 }
 #lostpets-content .box {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 8px;
-  margin: 16px;
+  margin: 16px auto;
   border: 8px solid var(--lightgreen);
   background-color: var(--cream);
   display: -webkit-box;
@@ -1320,4 +1303,12 @@ footer .dark-mode-toggle {
 }
 #lostpets-content h2 a:hover {
   color: var(--brown);
+}
+@media (min-width: 1100px) {
+  #lostpets-content .lostpets-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+    grid-template-columns: 33% 33% 33%;
+  }
 }

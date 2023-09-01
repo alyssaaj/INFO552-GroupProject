@@ -21,7 +21,19 @@ mainMenu.addEventListener("click", () => {
 })
 
 
+ // Dark Mode
+ let toggleBtn = document.querySelector(".dark-mode-toggle");
+
+ let sun = document.querySelector(".fa-sun");
+ let moon = document.querySelector(".fa-moon");
+
+ toggleBtn.addEventListener("click", function () {
+   document.querySelector('html').toggleAttribute('data-dark-mode')
+
+
+   sun.classList.toggle('hide-sun')
+   moon.classList.toggle('hide-moon')
+ });
 
 // AOS
 AOS.init();
-
