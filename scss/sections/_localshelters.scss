@@ -43,13 +43,11 @@
     button {
       margin: 8px;
       background-color: var(--green);
-      a {
-        text-decoration: none;
-        color: var(--cream);
-      }
-      a:hover {
-        color: var(--brown);
-      }
+      text-decoration: none;
+      color: var(--cream);
+    }
+    button:hover {
+      color: var(--brown);
     }
   }
 }

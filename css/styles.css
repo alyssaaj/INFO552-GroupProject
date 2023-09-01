@@ -1104,12 +1104,10 @@ footer .colorLink img {
 #localshelters-content .shelter-links button {
   margin: 8px;
   background-color: var(--green);
-}
-#localshelters-content .shelter-links button a {
   text-decoration: none;
   color: var(--cream);
 }
-#localshelters-content .shelter-links button a:hover {
+#localshelters-content .shelter-links button:hover {
   color: var(--brown);
 }
 
