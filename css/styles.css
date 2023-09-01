@@ -797,6 +797,10 @@ footer .colorLink img {
 #connect-content .connect_grid .event a:hover {
   color: var(--brown);
 }
+#connect-content .connect_grid .event img {
+  width: 400px;
+  height: 226px;
+}
 #connect-content #playdate-button {
   display: -webkit-box;
   display: -ms-flexbox;
