@@ -53,10 +53,10 @@
       color: var(--brown);
   }
 
-  .report-button {
-      background-color: var(--green);
-      color: white;
-      border: none;
+  .light-button {
+      background-color: var(--darkgreen);
+      color: var(--cream);
+      border: 2px solid var(--darkgreen);
       padding: 10px 20px;
       font-size: 16px;
       cursor: pointer;
@@ -64,13 +64,14 @@
       transition: background-color 0.3s ease;
   }
 
-  .report-button:hover {
-      background-color: var(--brown);
+  .light-button:hover {
+      color: var(--darkgreen);
+      background-color: var(--cream);
   }
 
-  .found-button {
+  /*.found-button {
       background-color: var(--green);
-      color: white;
+      color: var(--white);
       border: none;
       padding: 10px 20px;
       font-size: 16px;
@@ -80,7 +81,8 @@
   }
   .found-button:hover {
       background-color: var(--brown);
-  }
+      color: var(--white);
+  }*/
 
   .lostandfound-container {
      @media (min-width: 1100px) {

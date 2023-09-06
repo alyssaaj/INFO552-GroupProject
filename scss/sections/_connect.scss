@@ -3,9 +3,6 @@
 ============= */
 #connect-content {
 
- h1{
-text-align: center;
- }
 
   h4 {
     font-family: 'Merriweather', serif;
@@ -102,14 +99,13 @@ text-align: center;
       padding: 20px;
       background-color: var(--green);
       border-color: var(--lightgreen);
-      border-radius: 20px;
-      a {
-        text-decoration: none;
-        color: var(--white);
-      }
-      a:hover {
-        color: var(--brown);
-      }
+      border-radius: 5px;
+      border: 2px solid var(--darkgreen);
+
+    }
+    button:active, button:hover {
+      background-color: var(--lightgreen);
+      //color:
     }
   }
 }

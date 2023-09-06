@@ -30,7 +30,6 @@ mainMenu.addEventListener("click", () => {
  toggleBtn.addEventListener("click", function () {
    document.querySelector('html').toggleAttribute('data-dark-mode')
 
-
    sun.classList.toggle('hide-sun')
    moon.classList.toggle('hide-moon')
  });

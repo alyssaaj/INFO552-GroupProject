@@ -363,9 +363,11 @@ template {
 body {
   background-color: var(--white);
   font-family: "Roboto Serif", serif;
+  color: var(--brown);
 }
 body h1 {
   font-family: "Merriweather", serif;
+  text-align: center;
 }
 body h2 {
   font-family: "Merriweather", serif;
@@ -473,8 +475,12 @@ nav ul li {
 }
 nav .dropdownbtn {
   background-color: var(--green);
+  color: var(--brown);
   border: none;
   font-weight: 500;
+}
+nav .dropdownbtn:hover {
+  color: var(--cream);
 }
 nav .dropdown-content {
   display: none;
@@ -708,9 +714,6 @@ footer .colorLink img {
 /* =============
     Connect
 ============= */
-#connect-content h1 {
-  text-align: center;
-}
 #connect-content h4 {
   font-family: "Merriweather", serif;
   font-style: italic;
@@ -817,14 +820,11 @@ footer .colorLink img {
   padding: 20px;
   background-color: var(--green);
   border-color: var(--lightgreen);
-  border-radius: 20px;
+  border-radius: 5px;
+  border: 2px solid var(--darkgreen);
 }
-#connect-content #playdate-button button a {
-  text-decoration: none;
-  color: var(--white);
-}
-#connect-content #playdate-button button a:hover {
-  color: var(--brown);
+#connect-content #playdate-button button:active, #connect-content #playdate-button button:hover {
+  background-color: var(--lightgreen);
 }
 
 /* =============
@@ -892,9 +892,6 @@ footer .colorLink img {
 /* =============
     Medical
 ============= */
-#medical-content h1 {
-  text-align: center;
-}
 #medical-content h4 {
   font-family: "Merriweather", serif;
   font-style: italic;
@@ -966,6 +963,20 @@ footer .colorLink img {
       align-items: center;
       justify-content: center;
   }*/
+  /*.found-button {
+      background-color: var(--green);
+      color: var(--white);
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+  }
+  .found-button:hover {
+      background-color: var(--brown);
+      color: var(--white);
+  }*/
 }
 #lostandfound-content .box {
   -webkit-box-flex: 1;
@@ -1008,10 +1019,10 @@ footer .colorLink img {
 #lostandfound-content h2 a:hover {
   color: var(--brown);
 }
-#lostandfound-content .report-button {
-  background-color: var(--green);
-  color: white;
-  border: none;
+#lostandfound-content .light-button {
+  background-color: var(--darkgreen);
+  color: var(--cream);
+  border: 2px solid var(--darkgreen);
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
@@ -1019,22 +1030,9 @@ footer .colorLink img {
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-#lostandfound-content .report-button:hover {
-  background-color: var(--brown);
-}
-#lostandfound-content .found-button {
-  background-color: var(--green);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
-}
-#lostandfound-content .found-button:hover {
-  background-color: var(--brown);
+#lostandfound-content .light-button:hover {
+  color: var(--darkgreen);
+  background-color: var(--cream);
 }
 @media (min-width: 1100px) {
   #lostandfound-content .lostandfound-container {
@@ -1103,12 +1101,18 @@ footer .colorLink img {
 }
 #localshelters-content .shelter-links button {
   margin: 8px;
-  background-color: var(--green);
+  background-color: var(--darkgreen);
   text-decoration: none;
   color: var(--cream);
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  padding: 6px 6px;
 }
 #localshelters-content .shelter-links button:hover {
-  color: var(--brown);
+  color: var(--darkgreen);
+  background-color: var(--cream);
 }
 
 /* =============

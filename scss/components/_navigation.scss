@@ -37,9 +37,14 @@ nav{
 
     .dropdownbtn {
       background-color: var(--green);
+      color: var(--brown);
       border: none;
       font-weight: 500;
     }
+    .dropdownbtn:hover {
+        color: var(--cream);
+    }
+    
     .dropdown-content {
       display: none;
       position: absolute;
