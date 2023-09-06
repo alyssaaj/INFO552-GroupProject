@@ -508,6 +508,7 @@ nav .dropdown-content a {
     Header
 ============= */
 header {
+  z-index: 7;
   background-color: var(--green);
   color: var(--brown);
   display: -ms-grid;
